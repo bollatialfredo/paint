@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paint</title>
+</head>
+<body>
+    <div id="paint-container"></div>
+    <div id="dialog"></div>
+    <script src="paint.js"></script>
+</body>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+    }
+    #paint-container {
+        display: grid;
+        gap: 0px;
+        width: max-content;
+        margin: auto;
+        margin-top: 3px;
+    }
+    .cell {
+        background-color: white;
+        border: 1px solid lightgray;
+    }
+    #dialog {
+        position: absolute;
+        display: none;
+        background: white;
+        padding: 5px;
+        border: 1px solid black;
+    }
+    .color-option {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        cursor: pointer;
+        margin: 2px;
+    }
+</style>
+</html>
